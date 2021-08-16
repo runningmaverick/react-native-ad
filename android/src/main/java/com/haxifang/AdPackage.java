@@ -12,6 +12,7 @@ import com.facebook.react.uimanager.ViewManager;
 import com.haxifang.ad.AdManager;
 import com.haxifang.ad.DrawFeedViewManager;
 import com.haxifang.ad.FeedAdViewManager;
+import com.haxifang.ad.FeedAdViewGDTManager;
 import com.haxifang.ad.FullScreenVideo;
 import com.haxifang.ad.RewardVideo;
 import com.haxifang.ad.SplashAd;
@@ -37,6 +38,7 @@ public class AdPackage implements ReactPackage {
         return Arrays.<ViewManager>asList(
                 new DrawFeedViewManager(reactContext),
                 new FeedAdViewManager(reactContext),
+                new FeedAdViewGDTManager(reactContext),
                 new StreamViewManager(reactContext)
         );
     }

@@ -7,6 +7,7 @@ import startRewardVideo from './RewardVideo';
 import DrawFeed from './DrawFeed';
 import Feed from './Feed';
 import Stream from './Stream';
+import FeedGDT from './FeedGDT';
 
 export default {
     init,
@@ -18,4 +19,5 @@ export default {
     DrawFeed,
     Feed,
     Stream,
+    FeedGDT,
 };
