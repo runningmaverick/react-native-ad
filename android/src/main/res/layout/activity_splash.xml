@@ -47,9 +47,10 @@
                 android:textSize="50px"
                 android:gravity="center"
                 android:id="@+id/splash_name"
-                android:text="Loading..."/>
+                android:text="笔神作文"/>
 
         </LinearLayout>
+        <!--
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,6 +58,7 @@
             android:gravity="center"
             android:textColor="#AAA"
             android:text="正在启动中…"/>
+        -->
     </LinearLayout>
 
 </LinearLayout>
