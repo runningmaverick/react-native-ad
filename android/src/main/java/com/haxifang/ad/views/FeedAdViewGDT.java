@@ -129,7 +129,7 @@ public class FeedAdViewGDT extends RelativeLayout {
 
       // 1.加载广告，先设置加载上下文环境和条件
     private void refreshAd() {
-       nativeExpressAD = new NativeExpressAD(mContext, new ADSize(340, ADSize.AUTO_HEIGHT), _codeid, new NativeExpressAD.NativeExpressADListener() {
+       nativeExpressAD = new NativeExpressAD(mContext, new ADSize(ADSize.FULL_WIDTH, ADSize.AUTO_HEIGHT), _codeid, new NativeExpressAD.NativeExpressADListener() {
           @Override
           public void onNoAD(AdError error) {
             Log.i("AD_DEMO", String.format("onADError, error code: %d, error msg: %s", error.getErrorCode(), error.getErrorMsg()));
