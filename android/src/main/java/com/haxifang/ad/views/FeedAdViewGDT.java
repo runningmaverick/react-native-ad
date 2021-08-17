@@ -265,6 +265,7 @@ public class FeedAdViewGDT extends RelativeLayout {
           @Override
           public void onADClosed(NativeExpressADView adView) {
             Log.i(TAG, "onADClosed");
+            onAdClose("");
           }
 
           @Override
@@ -336,7 +337,7 @@ public class FeedAdViewGDT extends RelativeLayout {
     }
 
     public void onAdClose(String reason) {
-        Log.d(TAG, "onAdClose: " + reason);
+        Log.d(TAG, "onAdClose");
         WritableMap event = Arguments.createMap();
         event.putString("reason", reason);
         reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(getId(), "onAdClose", event);
