@@ -76,7 +76,8 @@
    if (self.expressAdViews.count) {
        [self.expressAdViews enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
            GDTNativeExpressAdView *expressView = (GDTNativeExpressAdView *)obj;
-           expressView.controller = self;
+           //UIViewController* viewController = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+           expressView.controller = [AdBoss getRootVC];
            [expressView render];
        }];
    }
@@ -107,14 +108,12 @@
 
 
 - (void)nativeExpressAdViewClosed:(GDTNativeExpressAdView *)nativeExpressAdView {
-    //FIXME: 模拟器里点击关闭按钮没反应
     self.onAdClose(@{
         @"message": @"ad closed",
     });
 }
 
 - (void)nativeExpressAdViewClicked:(GDTNativeExpressAdView *)nativeExpressAdView {
-    //FIXME: 模拟器里点击详情按钮没反应
     BUD_Log(@"feed ad clicked");
     self.onAdClick(@{
         @"message": @"ad been clicked",

@@ -26,6 +26,6 @@ Pod::Spec.new do |s|
   # s.dependency "..."
 
   s.dependency 'Ads-CN', '3.4.2.3'
-  s.dependency 'GDTMobSDK'
+  s.dependency 'GDTMobSDK', '4.13.01'
 end
 
