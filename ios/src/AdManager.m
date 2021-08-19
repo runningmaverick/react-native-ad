@@ -70,6 +70,13 @@ RCT_EXPORT_METHOD(init:(NSDictionary *)options resolve:(RCTPromiseResolveBlock)r
         NSLog(@"AdManager 提前加载 全屏视频  %@",codeid_reward_video);
         [AdBoss initFullScreenAd:codeid_full_video];
     }
+
+    NSString  *appidTx = options[@"tx_appid"];
+    if(appidTx != nil) {
+        //穿山甲 sdk init appid
+        [AdBoss initTx: appidTx];
+    }
+    
     
     resolve(@"OK");
 }

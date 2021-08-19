@@ -16,9 +16,13 @@
 #import <React/RCTEventEmitter.h>
 #import <React/RCTBridgeModule.h>
 
+// 广点通
+#import "GDTSDKConfig.h"
+
 @implementation AdBoss
 
 static NSString *_appid = nil;
+static NSString *_appidTx = nil;
 
 //缓存加载好的广告对象
 static BUNativeExpressRewardedVideoAd *rewardAd = nil;
@@ -59,6 +63,12 @@ static RCTPromiseRejectBlock adReject;
     [BUAdSDKManager setAppID:_appid];
     [BUAdSDKManager setIsPaidApp:NO];
     
+}
+
++(void)initTx:(NSString*) appid {
+    _appidTx = appid;
+    
+    [GDTSDKConfig registerAppId:_appidTx];
 }
 
 + (UIViewController *) getRootVC {

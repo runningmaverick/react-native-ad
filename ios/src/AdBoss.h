@@ -24,6 +24,7 @@ NSLog(@"【BUAd】%@", [NSString stringWithFormat:frmt,##__VA_ARGS__]);  \
 
 +(UIViewController*) getRootVC;
 +(void) init: (NSString*) appid;
++(void) initTx: (NSString*) appid;
 
 //加载视频广告
 +(void) initRewardAd: (NSString*) codeid userid:(NSString *)uid;

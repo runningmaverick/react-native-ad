@@ -24,6 +24,8 @@
 		2C26111124CDBE7700531A92 /* FullscreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2610FE24CDBE7700531A92 /* FullscreenViewController.m */; };
 		2C26111224CDBE7700531A92 /* AdBoss.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C26110024CDBE7700531A92 /* AdBoss.m */; };
 		2C26111324CDBE7700531A92 /* SplashAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C26110124CDBE7700531A92 /* SplashAd.m */; };
+		85059D7426CBBAF000FC66AF /* FeedAdGDT.m in Sources */ = {isa = PBXBuildFile; fileRef = 85059D7326CBBAF000FC66AF /* FeedAdGDT.m */; };
+		85059D7626CBBAFB00FC66AF /* FeedAdGDTManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85059D7526CBBAFB00FC66AF /* FeedAdGDTManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,6 +75,9 @@
 		2C26110024CDBE7700531A92 /* AdBoss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdBoss.m; sourceTree = "<group>"; };
 		2C26110124CDBE7700531A92 /* SplashAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashAd.m; sourceTree = "<group>"; };
 		2C26110224CDBE7700531A92 /* RewardVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardVideo.h; sourceTree = "<group>"; };
+		85059D7326CBBAF000FC66AF /* FeedAdGDT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedAdGDT.m; path = src/viewManagers/FeedAdGDT.m; sourceTree = SOURCE_ROOT; };
+		85059D7526CBBAFB00FC66AF /* FeedAdGDTManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedAdGDTManager.m; path = src/viewManagers/FeedAdGDTManager.m; sourceTree = SOURCE_ROOT; };
+		85059D7826CBBB5400FC66AF /* FeedAdGDT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedAdGDT.h; path = src/viewManagers/FeedAdGDT.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +133,9 @@
 		2C2610E324CDBE7700531A92 /* ViewManagers */ = {
 			isa = PBXGroup;
 			children = (
+				85059D7826CBBB5400FC66AF /* FeedAdGDT.h */,
+				85059D7526CBBAFB00FC66AF /* FeedAdGDTManager.m */,
+				85059D7326CBBAF000FC66AF /* FeedAdGDT.m */,
 				2C2610E824CDBE7700531A92 /* FeedAd.h */,
 				2C2610E524CDBE7700531A92 /* FeedAd.m */,
 				2C2610E724CDBE7700531A92 /* FeedAdManager.m */,
@@ -253,8 +261,10 @@
 				2C26110624CDBE7700531A92 /* DrawFeedAd.m in Sources */,
 				2C26110924CDBE7700531A92 /* RewardVideo.m in Sources */,
 				2C26110E24CDBE7700531A92 /* BUDCocoaSecurity.m in Sources */,
+				85059D7426CBBAF000FC66AF /* FeedAdGDT.m in Sources */,
 				2C26110824CDBE7700531A92 /* DrawFeedAdManager.m in Sources */,
 				2C26110B24CDBE7700531A92 /* UIView+Draw.m in Sources */,
+				85059D7626CBBAFB00FC66AF /* FeedAdGDTManager.m in Sources */,
 				2C26110F24CDBE7700531A92 /* AdManager.m in Sources */,
 				2C26110A24CDBE7700531A92 /* BUDBase64.m in Sources */,
 				2C26110324CDBE7700531A92 /* FullScreenVideo.m in Sources */,
