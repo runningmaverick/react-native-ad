@@ -1,5 +1,5 @@
 import React from 'react';
-import { NativeModules, NativeEventEmitter, requireNativeComponent } from 'react-native';
+import { Platform, NativeModules, NativeEventEmitter, requireNativeComponent } from 'react-native';
 
 export interface AD_EVENT_TYPE {
     onAdError: string; // 广告加载失败监听
@@ -20,7 +20,7 @@ const listenerCache = {};
 
 export default ({ appid, codeid, provider = '头条', anim = 'default' }: SPLASHAD_PROPS_TYPE) => {
     const { SplashAd , SplashAdGDT } = NativeModules;
-    const Splash = provider === '腾讯' ? SplashAdGDT : SplashAd
+    const Splash = provider === '腾讯' && Platform.OS === 'ios' ? SplashAdGDT : SplashAd
 
     const eventEmitter = new NativeEventEmitter(Splash);
     const result = Splash.loadSplashAd({ appid, codeid, provider, anim });
