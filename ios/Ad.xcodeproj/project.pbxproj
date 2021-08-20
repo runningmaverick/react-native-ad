@@ -26,6 +26,7 @@
 		2C26111324CDBE7700531A92 /* SplashAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C26110124CDBE7700531A92 /* SplashAd.m */; };
 		85059D7426CBBAF000FC66AF /* FeedAdGDT.m in Sources */ = {isa = PBXBuildFile; fileRef = 85059D7326CBBAF000FC66AF /* FeedAdGDT.m */; };
 		85059D7626CBBAFB00FC66AF /* FeedAdGDTManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85059D7526CBBAFB00FC66AF /* FeedAdGDTManager.m */; };
+		85A3866526CEC1BD00D8C975 /* SplashAdGDT.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A3866326CEC1BD00D8C975 /* SplashAdGDT.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -78,6 +79,8 @@
 		85059D7326CBBAF000FC66AF /* FeedAdGDT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedAdGDT.m; path = src/viewManagers/FeedAdGDT.m; sourceTree = SOURCE_ROOT; };
 		85059D7526CBBAFB00FC66AF /* FeedAdGDTManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedAdGDTManager.m; path = src/viewManagers/FeedAdGDTManager.m; sourceTree = SOURCE_ROOT; };
 		85059D7826CBBB5400FC66AF /* FeedAdGDT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedAdGDT.h; path = src/viewManagers/FeedAdGDT.h; sourceTree = SOURCE_ROOT; };
+		85A3866326CEC1BD00D8C975 /* SplashAdGDT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashAdGDT.m; sourceTree = "<group>"; };
+		85A3866426CEC1BD00D8C975 /* SplashAdGDT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashAdGDT.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 		2C2610DB24CDBE7700531A92 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				85A3866426CEC1BD00D8C975 /* SplashAdGDT.h */,
+				85A3866326CEC1BD00D8C975 /* SplashAdGDT.m */,
 				2C2610E124CDBE7700531A92 /* SplashAd.h */,
 				2C26110124CDBE7700531A92 /* SplashAd.m */,
 				2C2610E224CDBE7700531A92 /* AdBoss.h */,
@@ -258,6 +263,7 @@
 				2C26110524CDBE7700531A92 /* FeedAd.m in Sources */,
 				2C26110424CDBE7700531A92 /* BUDSlotViewModel.m in Sources */,
 				2C26110724CDBE7700531A92 /* FeedAdManager.m in Sources */,
+				85A3866526CEC1BD00D8C975 /* SplashAdGDT.m in Sources */,
 				2C26110624CDBE7700531A92 /* DrawFeedAd.m in Sources */,
 				2C26110924CDBE7700531A92 /* RewardVideo.m in Sources */,
 				2C26110E24CDBE7700531A92 /* BUDCocoaSecurity.m in Sources */,

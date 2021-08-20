@@ -19,9 +19,11 @@ export interface SPLASHAD_PROPS_TYPE {
 const listenerCache = {};
 
 export default ({ appid, codeid, provider = '头条', anim = 'default' }: SPLASHAD_PROPS_TYPE) => {
-    const { SplashAd } = NativeModules;
-    const eventEmitter = new NativeEventEmitter(SplashAd);
-    let result = SplashAd.loadSplashAd({ appid, codeid, provider, anim });
+    const { SplashAd , SplashAdGDT } = NativeModules;
+    const Splash = provider === '腾讯' ? SplashAdGDT : SplashAd
+
+    const eventEmitter = new NativeEventEmitter(Splash);
+    const result = Splash.loadSplashAd({ appid, codeid, provider, anim });
 
     return {
         result,
