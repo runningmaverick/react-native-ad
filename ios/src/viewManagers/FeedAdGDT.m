@@ -62,8 +62,8 @@
    self.nativeExpressAd.delegate = self;
    // 配置视频播放属性
    //self.nativeExpressAd.maxVideoDuration = (NSInteger)self.maxVideoDurationSlider.value;  // 如果需要设置视频最大时长，可以通过这个参数来进行设置
-   //self.nativeExpressAd.videoAutoPlayOnWWAN = self.videoAutoPlaySwitch.on;
-   //self.nativeExpressAd.videoMuted = self.videoMutedSwitch.on;
+   self.nativeExpressAd.videoAutoPlayOnWWAN = YES;
+   self.nativeExpressAd.videoMuted = YES;
    [self.nativeExpressAd loadAd:1];
 
 }
